@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Macky's Favorite Book</title>
+
+    <style>
+        *, *::before, *::after{
+            box-sizing: border-box;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+
+        :root{
+            --dark-color: #1f1717;
+            --primary-color: #e97777;
+            --secondary-color: #ff9f9f;
+            --highlight-color: #fcddb0;
+            --light-color: #fffad7;
+        }
+
+        body{
+            /* background-color: var(--primary-color); */
+            /* background-image: url(rrh.jpg);
+            background-size: cover;
+            background-repeat: no-repeat; */
+            /* background-position: center; */
+            position: relative;
+            color: white;
+            padding: 0;
+            margin: 0;
+        }
+
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-image: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('rrh.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            z-index: -1; /* Keep the background behind the content */}
+
+        .top{
+            height: 100vh;
+            padding: 0 100px;
+
+            background: rgba(255, 255, 255, 0.1);
+            /* border-radius: 16px; */
+            /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); */
+            backdrop-filter: blur(3px);
+            -webkit-backdrop-filter: blur(3px);
+            /* border: 1px solid rgba(255, 255, 255, 0.3); */
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        span{
+            font-weight: bold;
+        }
+        
+        h1{
+            color: rgb(210, 22, 22);
+        }
+    </style>
+</head>
+<body>
+    <div class="top">
+        <h1>Little Red Riding Hood</h1>
+        <h4>Journey into the heart of the forest with ‘Little Red Riding Hood’. This timeless tale follows a young girl named Red, who sets off to visit her grandmother. Along the way, she encounters a cunning wolf with a deceptive plan. With an enchanting forest as the backdrop, this story unfolds into a captivating adventure filled with suspense, lessons, and the enduring bond of family. Experience the magic and mystery of ‘Little Red Riding Hood’ like never before.</h4>
+        
+        <h2>Main Characters</h2>
+        <p><span>Little Red Riding Hood: </span> A dear little girl who wears a red velvet cap and is loved by everyone.</p>
+        <p><span>Grandmother: </span>Little Red Riding Hood’s ailing grandmother who lives deep in the woods.</p>
+        <p><span>Wolf:</span>The cunning antagonist who plots to deceive and harm Little Red Riding Hood and her grandmother.</p>
+    
+   
+    </div>
+
+    <!-- <img src="rrh.jpg" alt="rrh"> -->
+   
+
+</body>
+</html>
